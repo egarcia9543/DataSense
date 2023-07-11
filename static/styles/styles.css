@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url('../imgs/bg.svg');
+}
+
+nav.navbar {
+    background-color: rgba(9, 9, 9, 0.2);
+    backdrop-filter: blur(1rem);
+}
+
+.logo {
+    width: 24rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.nav-item a.nav-link {
+    font-size: 1.8rem;
+}
+
+.nav-item a.nav-link:hover {
+    color: #8c15e9 !important;
+    background-color: #150050;
+    border-radius: 1rem;
+}
