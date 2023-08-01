@@ -44,10 +44,18 @@ html {
     margin: 0;
 }
 
+.section-title {
+    font-size: 2.8rem;
+}
+
 .introduction-img {
     width: 32rem;
     height: 32rem;
     object-fit: cover;
+    border-radius: 2rem;
+}
+
+img.radius-2rem {
     border-radius: 2rem;
 }
 

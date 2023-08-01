@@ -5,6 +5,7 @@ const router = express.Router();
 
 
 router.get('/', functions.landingPage);
-
+router.get('/about', functions.aboutPage);
+router.get('/tools', functions.toolsPage);
 
 module.exports = router

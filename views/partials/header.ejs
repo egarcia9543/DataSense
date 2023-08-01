@@ -10,10 +10,13 @@
         <div class="collapse navbar-collapse" id="navbar-items">
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item me-4 ">
-                    <a class="nav-link pe-3 ps-3" aria-current="page" href="#">Sobre Nosotros</a>
+                    <a class="nav-link pe-3 ps-3" aria-current="page" href="about">Sobre Nosotros</a>
                 </li>
-                <li class="nav-item me-4 ">
-                    <a class="nav-link pe-3 ps-3" href="#">Herramientas</a>
+                <li class="nav-item me-4 dropdown">
+                    <a id="dropdownMenuLink" class="nav-link pe-3 ps-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="tools">Herramientas</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item fs-4" href="about/tableau">Tableau</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item me-4 ">
                     <a class="nav-link pe-3 ps-3" href="#">Aprendizaje</a>
@@ -28,10 +31,4 @@
         </div>
     </div>
 </nav>
-<div class="container-fluid pb-3 pt-3">
-    <div class="row justify-content-center align-items-center">
-        <div class="slogan-container col-12 col-sm-10 col-md-10 col-lg-10 py-5">
-            <h1 class="slogan text-center pt-5 pb-5 display-1">¡Desata el poder del análisis de datos!</h1>
-        </div>
-    </div>
-</div>
+

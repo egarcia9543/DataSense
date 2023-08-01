@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+</head>
+<body>
+    <header class="background-wrapper">
+        <%- include('./partials/header') %>
+    </header>
+    <main>
+        <section class="mt-5">
+            <div class="container d-flex align-items-center flex-column flex-wrap">
+                <h2 class="fw-bold text-center section-title mb-3">Potenciando el Éxito Empresarial a través del Análisis y Gestión de Datos</h2>
+                <div class="row mt-4">
+                    <div class="col-12 col-lg-6 pb-4 ps-5 pe-5 d-flex align-items-center">
+                        <p class="fs-2 justified"><%= aboutIntroduction %></p>
+                    </div>
+                    <div class="col-12 col-lg-6 pb-4 ps-4 pe-4 d-flex align-items-center">
+                        <img class="img-fluid radius-2rem" src="/imgs/about-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <h2 class="fw-bold text-center section-title mb-3">Asesoramiento Especializado en Gestión de Datos</h2>
+                <div class="row mt-4">
+                    <div class="col-12 col-lg-6 pb-4 ps-4 pe-4 d-flex align-items-center">
+                        <img class="img-fluid radius-2rem" src="/imgs/about-2.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6 pb-4 ps-5 pe-5 d-flex align-items-center">
+                        <p class="fs-2 justified"><%= aboutSection %></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 pb-4 ps-5 pe-5 d-flex align-items-center flex-column">
+                        <h2 class="fw-bold text-center section-title text-center">Misión</h2>
+                        <p class="fs-2 justified"><%= mision %></p>
+                    </div>
+                    <div class="col-12 col-lg-6 pb-4 ps-5 pe-5 d-flex align-items-center flex-column">
+                        <h2 class="fw-bold text-center section-title text-center">Visión</h2>
+                        <p class="fs-2 justified"><%= vision %></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+</body>
+</html>
