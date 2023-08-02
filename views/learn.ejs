@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+</head>
+
+<body>
+    <header class="background-wrapper">
+        <%- include('./partials/header') %>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <h2 class="fw-bold section-title text-center mb-3">Bienvenido a nuestra sección de Aprendizaje y Formación
+            </h2>
+            <p class="fs-2 justified">
+                <%= learnIntroduction %>
+            </p>
+        </section>
+        <section class="container mt-5">
+            <div class="row d-flex justify-content-between">
+                <div class="card border-dark col-12 p-0" style="width: 28rem;">
+                    <img src="/imgs/learn-1.jpg" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="fs-3 card-title fw-bold">Fundamentos profesionales del Análisis de Datos</h5>
+                        <p class="card-text fs-4 justified">Aprende los conceptos básicos del análisis de datos y practica usando herramientas de software para analizar y visualizar información.</p>
+                        <a href="https://www.linkedin.com/learning/paths/fundamentos-profesionales-del-analisis-de-datos-por-microsoft-y-linkedin?src=re-other&veh=news.microsoft.com%7Cre-other" class="btn btn-primary fs-5">Ver más</a>
+                    </div>
+                </div>
+                
+                <div class="card border-dark col-12 p-0" style="width: 28rem;">
+                    <img src="/imgs/learn-1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="fs-3 card-title fw-bold">Análisis exploratorio de datos con Python y R</h5>
+                        <p class="card-text fs-4 justified">Incrementa tus conocimientos en los aspectos básicos de la estadística y en las principales librerías de Python y R para el análisis exploratorio de datos y el manejo de bases de datos. Este es el primer paso en tu carrera como científico de datos.</p>
+                        <a href="https://www.edx.org/es/course/analisis-exploratorio-de-datos-con-python-y-r" class="btn btn-primary fs-5">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="card border-dark col-12 p-0" style="width: 28rem;">
+                    <img src="/imgs/learn-1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="fs-3 card-title fw-bold">Curso Power BI - Crea un Dashboard desde cero</h5>
+                        <p class="card-text fs-4 justified">Bienvenido al curso gratuito de Power BI para crear, paso a paso, un dashboard interactivo. A través de él vas a poder conocer, a nivel introductorio, el mundo del Business Intelligence y el análisis de datos.</p>
+                        <a href="https://www.udemy.com/course/curso-power-bi-gratis-crea-un-dashboard-desde-cero/" class="btn btn-primary fs-5">Ver más</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <p class="fs-2 text-center">Nota: Los cursos gratuitos ofrecidos en la sección de Aprendizaje y Formación son proporcionados por plataformas educativas externas, y DateSense Solutions no se hace responsable del contenido o cambios en la disponibilidad de los cursos.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+</body>
+
+</html>

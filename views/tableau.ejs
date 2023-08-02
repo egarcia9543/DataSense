@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <header class="background-wrapper">
+        <%- include('partials/header') %>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <h2 class="fw-bold section-title text-center mb-4">Tableau</h2>
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex align-items-center">
+                    <p class="fs-2 justified"><%= tableauDescription %></p>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                    <iframe width="500" height="280" src="https://www.youtube.com/embed/91ljNshh14c" title="¿Qué es Tableau?  🖥️🔥" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <h2 class="fw-bold section-title text-center mb-4">Ejemplos prácticos</h2>
+            <div class="d-flex align-items-center w-100">
+                <div class='tableauPlaceholder' id='viz1690928822274' style='position: relative'><noscript><a href='https:&#47;&#47;www.vizwiz.com&#47;2023&#47;08&#47;templates.html'><img alt='Soft Sales Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SampleSoftDrinkSales&#47;SoftSalesDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SampleSoftDrinkSales&#47;SoftSalesDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SampleSoftDrinkSales&#47;SoftSalesDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1690928822274');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='927px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+        </section>
+        <section class="container mt-5 mb-4">
+            <h2 class="fw-bold section-title text-center mb-4">Tutoriales, recursos adicionales</h2>
+            <div class="d-flex flex-column align-items-center">
+                <p class="fs-2">Si te interesa aprender a utilizar la herramienta de una forma más efectiva para realizar este tipo de diseños, Tableau nos ofrece una variedad de tutoriales y documentación para empezar a crear este tipo de vistas</p>
+                <p class="fs-2">Puedes revisar alguno de sus recursos<a class="text-decoration-none" href="https://public.tableau.com/app/resources/learn"> aquí</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+</html>

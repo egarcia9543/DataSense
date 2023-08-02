@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+</head>
+
+<body>
+    <header class="background-wrapper">
+        <%- include('./partials/header') %>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <h2 class="fw-bold section-title mb-4 text-center">¡Contáctanos!</h2>
+            <p class="fs-2 text-center">Nuestro compromiso es brindar un servicio excepcional y soluciones personalizadas para tus necesidades en gestión y análisis de datos. Si tienes alguna pregunta, inquietud o simplemente deseas explorar cómo podemos ayudarte a impulsar tu negocio con datos sólidos, ¡estamos aquí para ti! Envíanos tu correo y pronto estaremos en contacto contigo.</p>
+        </div>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    
+                    <form action="sendmail" method="post">
+                        <div class="mb-3">
+                            <input type="text" class="form-control fs-2 mb-3" placeholder="Ingresa tu nombre" required name="nameContact">
+                            <input type="email" class="form-control fs-2" id="emailInput"
+                                placeholder="Ingresa tu correo electrónico" required name="emailContact">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <button type="submit" class="btn btn-primary fs-4">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

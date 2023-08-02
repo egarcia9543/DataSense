@@ -1,3 +1,4 @@
+const nodemailer = require('nodemailer');
 
 exports.landingPage = (req, res) => {
     res.render('index');
@@ -15,3 +16,47 @@ exports.toolsPage = (req, res) => {
     res.render('tools');
 }
 
+exports.tableauPage = (req, res) => {
+    const tableauDescription = 'Tableau es una poderosa herramienta de visualización y análisis de datos que permite transformar información compleja en gráficos interactivos y paneles fáciles de entender. Con una interfaz amigable y herramientas intuitivas, Tableau es ampliamente reconocido como uno de los líderes en el campo de la visualización de datos. Esta herramienta permite a los usuarios conectarse a diversas fuentes de datos, combinarlos y crear visualizaciones dinámicas que facilitan el descubrimiento de ideas y patrones ocultos.'
+    const tableauDescription2 = 'Tableau es versátil y puede utilizarse en diferentes sectores, desde negocios y finanzas hasta educación, salud y más. Su capacidad para conectarse a fuentes de datos en tiempo real, bases de datos, hojas de cálculo y archivos en la nube lo convierte en una herramienta valiosa para aquellos que buscan explorar y comunicar datos de manera efectiva.'
+    res.render('tableau', {tableauDescription, tableauDescription2});
+}
+
+exports.learnPage = (req, res) => {
+    const learnIntroduction = 'En DateSense Solutions, creemos que el conocimiento es la clave para el crecimiento personal y profesional. Por ello, nos complace presentar nuestra sección de Aprendizaje y Formación, donde ofrecemos una selección de cursos gratuitos para que las personas puedan desarrollar nuevas habilidades y ganar experiencia en diversas áreas.'
+    res.render('learn', {learnIntroduction});
+}
+
+exports.resourcesPage = (req, res) => {
+    res.render('resources');
+}
+
+exports.contactPage = (req, res) => {
+    res.render('contact');
+}
+
+exports.sendEmail = (req, res) => {
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',  
+        auth: {
+            user: `${process.env.GMAIL}`, 
+            pass: `${process.env.GPASS}` 
+        }
+    });
+
+    let mailOptions = {
+        from: `${process.env.GMAIL}`,
+        to: req.body.emailContact, 
+        subject: 'Gracias por contactarnos', 
+        text: `Hola ${req.body.nameContact}, gracias por contactarnos. En breve uno de nuestros asesores se pondrá en contacto contigo para solucionar tus dudas.`
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Correo enviado satisfactoriamente');
+            res.redirect('/')
+        }
+    });
+}
